@@ -1,0 +1,54 @@
+/** General **/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+/** Navbar **/
+
+#navbar {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#navbar header, #navbar li {
+    padding: 0.5rem;
+}
+
+#navbar header {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#navbar .divider {
+    display: block;
+    content: "";
+    background-color: antiquewhite;
+    height: 3px;
+    width: 100vw;
+    padding: 0;
+}
+
+#navbar li {
+ list-style-type: none;
+ padding-left: 0.5rem;
+}
+
+#navbar li:first-of-type {
+    padding-top: 1rem;
+}
+
+#navbar a {
+    color: antiquewhite;
+    text-decoration: underline dotted antiquewhite 1.5px;
+}
+
