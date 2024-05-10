@@ -1,9 +1,9 @@
 {
-  "name": "javascript-certifications",
+  "name": "testprojects-public",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projects for testing and certifications",
   "scripts": {
-    "runparcel": "parcel index.html"
+    "dev": "parcel ./index.html"
   },
   "keywords": [],
   "author": "",
