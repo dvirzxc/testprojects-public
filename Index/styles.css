@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@property --text-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff;
+  }
+
+  @property --background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #e51d2b;
+  }
+
+body {
+    font-family: 'Chakra Petch', 'Courier New', Courier, monospace;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    min-height: 80vh;
+    padding-bottom: 6rem;
+}
+
+h1 {
+    font-family: 'Handjet', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.links-block {
+    display: block;
+    text-align: center;
+}
+
+.links-block li {
+    list-style: none;
+    font-weight: 600;
+}
+
+.links-block a, a {
+    text-decoration: underline dotted 2px;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.links-block a:hover, a:hover {
+    color: #4b0000;
+}
+
+footer {
+    position: fixed;
+    width: 100vw;
+    vertical-align: middle;
+    height: 6.5rem;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--background-color) 40%,transparent);
+}
+
+footer p {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+}
