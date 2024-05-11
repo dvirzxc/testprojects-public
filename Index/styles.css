@@ -8,7 +8,7 @@
     initial-value: #ffffff;
   }
 
-  @property --background-color {
+@property --background-color {
     syntax: "<color>";
     inherits: false;
     initial-value: #e51d2b;
@@ -39,6 +39,24 @@ h1 {
     text-align: center;
 }
 
+.section-header {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.section-header::after {
+    display: block;
+    content: " ";
+    margin-top: 3px;
+    height: 0.75px;
+    width: 100vw;
+    max-width: 50rem;
+    background-color: white;
+}
+
 .links-block {
     display: block;
     text-align: center;
@@ -53,10 +71,25 @@ h1 {
     text-decoration: underline dotted 2px;
     color: var(--text-color);
     font-weight: normal;
+    font-size: 1rem;
 }
 
 .links-block a:hover, a:hover {
     color: #4b0000;
+}
+
+.links-block::after {
+    display: block;
+    content: " ";
+    height: 1px;
+    padding-bottom: 3rem;
+}
+
+.links-block:last-of-type::after {
+    display: block;
+    content: " ";
+    height: 0;
+    padding: 0;
 }
 
 footer {
